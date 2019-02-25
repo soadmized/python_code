@@ -1,0 +1,905 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SmbpDebugConfiguration>
+  <Description>Parsed from SmBP log file 'BlockUnblockProcess.txt' by processId = '22321#22322'</Description>
+  <InitContext SystemDate="2018-09-13 11:45:10 Europe/Moscow">
+    <EventData EventTypeId="22577">
+      <Properties>
+        <Property Id="9255" ValueType="INTEGER">0</Property>
+        <Property Id="8228" ValueType="INTEGER">0</Property>
+        <Property Id="7199" ValueType="STRING">FRPARTBL</Property>
+        <Property Id="7198" ValueType="STRING">Unblock</Property>
+        <Property Id="1027" ValueType="STRING">77771000113</Property>
+        <Property Id="-5" ValueType="INTEGER">0</Property>
+        <Property Id="-4" ValueType="DATETIME">2018-09-13 08:44:48Z</Property>
+        <Property Id="-3" ValueType="INTEGER">0</Property>
+        <Property Id="-2" ValueType="INTEGER">2147483647</Property>
+        <Property Id="-15" ValueType="INTEGER">0</Property>
+        <Property Id="-14" ValueType="INTEGER">0</Property>
+        <Property Id="-1" ValueType="INTEGER">22577</Property>
+      </Properties>
+      <Tables/>
+    </EventData>
+    <Variables/>
+    <TableVariables/>
+    <Session>
+      <Properties/>
+    </Session>
+    <Customers>
+      <Customer EntityDefId="2053" EntityId="92603">
+        <Properties>
+          <Property DateFrom="2018-06-20 08:00:00Z" DateTo="2038-01-19 03:14:07Z" Id="14490" ValueType="DATETIME">2018-06-20 08:00:00Z</Property>
+          <Property DateFrom="2018-06-20 08:00:00Z" DateTo="2038-01-19 03:14:07Z" Id="14484" ValueType="STRING">1</Property>
+          <Property DateFrom="2018-06-20 08:00:00Z" DateTo="2038-01-19 03:14:07Z" Id="14483" ValueType="INTEGER">111</Property>
+          <Property DateFrom="2018-06-20 08:00:00Z" DateTo="2038-01-19 03:14:07Z" Id="14482" ValueType="INTEGER">100235937</Property>
+          <Property DateFrom="2018-06-20 08:00:00Z" DateTo="2038-01-19 03:14:07Z" Id="-7" ValueType="DATETIME">2038-01-19 03:14:07Z</Property>
+          <Property DateFrom="2018-06-20 08:00:00Z" DateTo="2038-01-19 03:14:07Z" Id="-6" ValueType="DATETIME">2018-06-20 08:00:00Z</Property>
+          <Property DateFrom="2018-06-20 08:00:00Z" DateTo="2038-01-19 03:14:07Z" Id="-3" ValueType="INTEGER">2</Property>
+          <Property DateFrom="2018-06-20 08:00:00Z" DateTo="2038-01-19 03:14:07Z" Id="-2" ValueType="INTEGER">92603</Property>
+          <Property DateFrom="2018-06-20 08:00:00Z" DateTo="2038-01-19 03:14:07Z" Id="-1" ValueType="INTEGER">2053</Property>
+        </Properties>
+        <Tables/>
+        <Counters/>
+        <Relations/>
+      </Customer>
+      <Customer EntityDefId="2051" EntityId="92605">
+        <Properties>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="8200" ValueType="STRING">254254</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="5122" ValueType="INTEGER">100243197</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="2" ValueType="INTEGER">454412072383</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14503" ValueType="STRING">1</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14502" ValueType="STRING">1</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14500" ValueType="STRING">810</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14499" ValueType="STRING">1</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14498" ValueType="STRING">1</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14494" ValueType="STRING">1</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14490" ValueType="DATETIME">2018-06-20 08:00:00Z</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14488" ValueType="STRING">ST01</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14486" ValueType="STRING">ST</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14477" ValueType="STRING">8</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14474" ValueType="STRING">254</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="-7" ValueType="DATETIME">2038-01-19 06:14:07 Europe/Moscow</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="-6" ValueType="DATETIME">2018-06-20 11:00:00 Europe/Moscow</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="-5" ValueType="STRING">Europe/Moscow</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="-3" ValueType="INTEGER">2</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="-2" ValueType="INTEGER">92605</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="-1" ValueType="INTEGER">2051</Property>
+        </Properties>
+        <Tables/>
+        <Counters/>
+        <Relations>
+          <Relation ChildCustomerId="92605" ConditionParameters=" " ConditionTypeId="0" DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" HierarchyRelationId="1027" ParentCustomerId="92604" Priority="0" RuleParameters=" " RuleTypeId="0"/>
+        </Relations>
+      </Customer>
+      <Customer EntityDefId="2052" EntityId="92604">
+        <Properties>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="8200" ValueType="STRING">254254</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14497" ValueType="STRING">1</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14496" ValueType="STRING">3</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14495" ValueType="STRING">1</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14494" ValueType="STRING">1</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14493" ValueType="STRING">1</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14492" ValueType="STRING">1</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14490" ValueType="DATETIME">2018-06-20 08:00:00Z</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14489" ValueType="INTEGER">0</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14480" ValueType="STRING">100</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14479" ValueType="STRING">125400012337</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14478" ValueType="INTEGER">100224923</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14474" ValueType="STRING">254</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="-7" ValueType="DATETIME">2038-01-19 06:14:07 Europe/Moscow</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="-6" ValueType="DATETIME">2018-06-20 11:00:00 Europe/Moscow</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="-5" ValueType="STRING">Europe/Moscow</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="-3" ValueType="INTEGER">2</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="-2" ValueType="INTEGER">92604</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="-1" ValueType="INTEGER">2052</Property>
+        </Properties>
+        <Tables/>
+        <Counters/>
+        <Relations>
+          <Relation ChildCustomerId="92604" ConditionParameters=" " ConditionTypeId="0" DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" HierarchyRelationId="1026" ParentCustomerId="92603" Priority="0" RuleParameters=" " RuleTypeId="0"/>
+        </Relations>
+      </Customer>
+      <Customer EntityDefId="2050" EntityId="92606">
+        <Properties>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="8200" ValueType="STRING">254254</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="3" ValueType="STRING">77771000113</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14505" ValueType="STRING">M</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14504" ValueType="STRING">89702500107777122361</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14494" ValueType="STRING">1</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14490" ValueType="DATETIME">2018-06-20 08:00:00Z</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14487" ValueType="STRING">SMBPTSPB01</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14476" ValueType="STRING">250010777712236</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="1" ValueType="INTEGER">100273175</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="-7" ValueType="DATETIME">2038-01-19 06:14:07 Europe/Moscow</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="-6" ValueType="DATETIME">2018-06-20 11:00:00 Europe/Moscow</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="-5" ValueType="STRING">Europe/Moscow</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="-3" ValueType="INTEGER">2</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="-2" ValueType="INTEGER">92606</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="-1" ValueType="INTEGER">2050</Property>
+        </Properties>
+        <Tables>
+          <Table Id="5127"/>
+          <Table Id="2053"/>
+          <Table Id="2055">
+            <Row Number="0">
+              <Column Id="2117" ValueType="INTEGER">137193</Column>
+              <Column Id="4165" ValueType="INTEGER">0</Column>
+              <Column Id="5189" ValueType="STRING">ACTIVE</Column>
+              <Column Id="2118" ValueType="DATETIME">2018-06-20 11:00:00 Europe/Moscow</Column>
+              <Column Id="2119" ValueType="DATETIME">2038-01-19 06:14:07 Europe/Moscow</Column>
+              <Column Id="2120" ValueType="INTEGER">2020522</Column>
+              <Column Id="2121" ValueType="STRING">CB101</Column>
+              <Column Id="2122" ValueType="INTEGER">1</Column>
+              <Column Id="2123" ValueType="INTEGER">1</Column>
+              <Column Id="2124" ValueType="INTEGER">1</Column>
+              <Column Id="2126" ValueType="INTEGER">1</Column>
+              <Column Id="2127" ValueType="STRING"/>
+              <Column Id="2128" ValueType="INTEGER">100273175</Column>
+            </Row>
+            <Row Number="1">
+              <Column Id="2117" ValueType="INTEGER">137195</Column>
+              <Column Id="4165" ValueType="INTEGER">0</Column>
+              <Column Id="5189" ValueType="STRING">ACTIVE</Column>
+              <Column Id="2118" ValueType="DATETIME">2018-06-20 11:09:48 Europe/Moscow</Column>
+              <Column Id="2119" ValueType="DATETIME">2038-01-19 06:14:07 Europe/Moscow</Column>
+              <Column Id="2120" ValueType="INTEGER">2020523</Column>
+              <Column Id="2121" ValueType="STRING">PE13585.1.1</Column>
+              <Column Id="2122" ValueType="INTEGER">1</Column>
+              <Column Id="2123" ValueType="INTEGER">1</Column>
+              <Column Id="2124" ValueType="INTEGER">1</Column>
+              <Column Id="2126" ValueType="INTEGER">1</Column>
+              <Column Id="2127" ValueType="STRING"/>
+              <Column Id="2128" ValueType="INTEGER">100273175</Column>
+            </Row>
+            <Row Number="2">
+              <Column Id="2117" ValueType="INTEGER">137196</Column>
+              <Column Id="4165" ValueType="INTEGER">0</Column>
+              <Column Id="5189" ValueType="STRING">ACTIVE</Column>
+              <Column Id="2118" ValueType="DATETIME">2018-06-20 11:09:48 Europe/Moscow</Column>
+              <Column Id="2119" ValueType="DATETIME">2038-01-19 06:14:07 Europe/Moscow</Column>
+              <Column Id="2120" ValueType="INTEGER">2020525</Column>
+              <Column Id="2121" ValueType="STRING">PE13586.1.1</Column>
+              <Column Id="2122" ValueType="INTEGER">1</Column>
+              <Column Id="2123" ValueType="INTEGER">1</Column>
+              <Column Id="2124" ValueType="INTEGER">1</Column>
+              <Column Id="2126" ValueType="INTEGER">1</Column>
+              <Column Id="2127" ValueType="STRING"/>
+              <Column Id="2128" ValueType="INTEGER">100273175</Column>
+            </Row>
+            <Row Number="3">
+              <Column Id="2117" ValueType="INTEGER">137198</Column>
+              <Column Id="4165" ValueType="INTEGER">0</Column>
+              <Column Id="5189" ValueType="STRING">ACTIVE</Column>
+              <Column Id="2118" ValueType="DATETIME">2018-06-20 11:09:48 Europe/Moscow</Column>
+              <Column Id="2119" ValueType="DATETIME">2018-08-20 11:15:01 Europe/Moscow</Column>
+              <Column Id="2120" ValueType="INTEGER">2020524</Column>
+              <Column Id="2121" ValueType="STRING">PE13587.1.1</Column>
+              <Column Id="2122" ValueType="INTEGER">1</Column>
+              <Column Id="2123" ValueType="INTEGER">1</Column>
+              <Column Id="2124" ValueType="INTEGER">1</Column>
+              <Column Id="2126" ValueType="INTEGER">1</Column>
+              <Column Id="2127" ValueType="STRING"/>
+              <Column Id="2128" ValueType="INTEGER">100273175</Column>
+            </Row>
+          </Table>
+          <Table Id="1027"/>
+          <Table Id="2056"/>
+          <Table Id="4103"/>
+          <Table Id="2057"/>
+          <Table Id="1025">
+            <Row Number="0">
+              <Column Id="1025" ValueType="INTEGER">4471</Column>
+              <Column Id="1026" ValueType="DATETIME">2018-06-20 11:09:48 Europe/Moscow</Column>
+              <Column Id="1027" ValueType="DATETIME">2038-01-19 06:14:07 Europe/Moscow</Column>
+              <Column Id="1028" ValueType="INTEGER">2020523</Column>
+              <Column Id="1029" ValueType="STRING">PE13585.1.1</Column>
+              <Column Id="1030" ValueType="DATETIME">2018-07-21 00:00:00 Europe/Moscow</Column>
+              <Column Id="1046" ValueType="INTEGER">1</Column>
+              <Column Id="1031" ValueType="DATETIME">2018-09-21 00:00:00 Europe/Moscow</Column>
+              <Column Id="1047" ValueType="INTEGER">1</Column>
+              <Column Id="1032" ValueType="INTEGER">1</Column>
+              <Column Id="1033" ValueType="DATETIME">2018-09-13 11:01:54 Europe/Moscow</Column>
+            </Row>
+          </Table>
+          <Table Id="1026">
+            <Row Number="0">
+              <Column Id="3142" ValueType="DATETIME">1970-01-01 03:00:01 Europe/Moscow</Column>
+              <Column Id="3143" ValueType="DATETIME">2038-01-19 06:14:07 Europe/Moscow</Column>
+              <Column Id="2072" ValueType="DATETIME">2018-09-13 11:33:48 Europe/Moscow</Column>
+              <Column Id="2073" ValueType="DATETIME">2038-01-19 06:14:07 Europe/Moscow</Column>
+              <Column Id="1034" ValueType="INTEGER">15137</Column>
+              <Column Id="1035" ValueType="DATETIME">2018-09-13 11:33:48 Europe/Moscow</Column>
+              <Column Id="1036" ValueType="DATETIME">2038-01-19 06:14:07 Europe/Moscow</Column>
+              <Column Id="1038" ValueType="STRING">FRPARTBL</Column>
+            </Row>
+          </Table>
+          <Table Id="2052"/>
+        </Tables>
+        <Counters/>
+        <Relations>
+          <Relation ChildCustomerId="92606" ConditionParameters=" " ConditionTypeId="0" DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" HierarchyRelationId="1028" ParentCustomerId="92605" Priority="0" RuleParameters=" " RuleTypeId="0"/>
+        </Relations>
+      </Customer>
+    </Customers>
+    <EntityRoleInEvents>
+      <Role CustomerId="92606" RoleId="22575"/>
+    </EntityRoleInEvents>
+    <OutRecords>
+      <OutRecord Id="1025">
+        <Properties>
+          <Property Id="1025" ValueType="INTEGER">0</Property>
+        </Properties>
+        <Tables/>
+      </OutRecord>
+    </OutRecords>
+    <UserDictionaries><UserDictionary Name="FRS_SubscribeServices">
+            <Table Id="18489">
+              <Row Number="1">
+                <Column Id="28917" ValueType="STRING">PE13585.1.1</Column>
+                <Column Id="28918" ValueType="STRING">PE13793.1.1</Column>
+                <Column Id="28919" ValueType="STRING">PE13587.1.1</Column>
+                <Column Id="-1" ValueType="INTEGER">1</Column>
+              </Row>
+            </Table>
+          </UserDictionary>
+          <UserDictionary Name="FRS_ContentServices">
+            <Table Id="18490">
+              <Row Number="1">
+                <Column Id="28929" ValueType="STRING">PE13585.1.1</Column>
+                <Column Id="-1" ValueType="INTEGER">1</Column>
+              </Row>
+            </Table>
+          </UserDictionary>
+      <UserDictionary Name="systemParameters">
+        <Table Id="4">
+          <Row Number="99903163">
+            <Column Id="6157" ValueType="DATETIME">2037-01-01 02:00:01 Europe/Moscow</Column>
+            <Column Id="6156" ValueType="DATETIME">1970-01-01 03:00:01 Europe/Moscow</Column>
+            <Column Id="6155" ValueType="INTEGER">2</Column>
+            <Column Id="6154" ValueType="STRING">AppleMusicVersion</Column>
+            <Column Id="13454" ValueType="STRING"/>
+            <Column Id="12458" ValueType="STRING"/>
+            <Column Id="-1" ValueType="INTEGER">99903163</Column>
+          </Row>
+          <Row Number="10253">
+            <Column Id="6157" ValueType="DATETIME">2038-01-01 03:00:01 Europe/Moscow</Column>
+            <Column Id="6156" ValueType="DATETIME">1970-01-01 03:00:01 Europe/Moscow</Column>
+            <Column Id="6155" ValueType="INTEGER">0</Column>
+            <Column Id="6154" ValueType="STRING">TDFixClass</Column>
+            <Column Id="13454" ValueType="STRING">fix</Column>
+            <Column Id="12458" ValueType="STRING">Код ПО для фиксированной связи</Column>
+            <Column Id="-1" ValueType="INTEGER">10253</Column>
+          </Row>
+          <Row Number="10251">
+            <Column Id="6157" ValueType="DATETIME">2038-01-01 03:00:01 Europe/Moscow</Column>
+            <Column Id="6156" ValueType="DATETIME">1970-01-01 03:00:01 Europe/Moscow</Column>
+            <Column Id="6155" ValueType="INTEGER">0</Column>
+            <Column Id="6154" ValueType="STRING">isPAListChargeMode</Column>
+            <Column Id="13454" ValueType="STRING"/>
+            <Column Id="12458" ValueType="STRING">Включение фазы 2 для заданного списка лс. 1 - включён, 0 - по умолчанию.</Column>
+            <Column Id="-1" ValueType="INTEGER">10251</Column>
+          </Row>
+          <Row Number="99902138">
+            <Column Id="6157" ValueType="DATETIME">2038-01-01 03:00:01 Europe/Moscow</Column>
+            <Column Id="6156" ValueType="DATETIME">1970-01-01 03:00:01 Europe/Moscow</Column>
+            <Column Id="6155" ValueType="INTEGER">1</Column>
+            <Column Id="6154" ValueType="STRING">CheckDateFromMin</Column>
+            <Column Id="13454" ValueType="STRING"/>
+            <Column Id="12458" ValueType="STRING">Настройка определяет для сценария 1.75 blockUnblockCustomer, из каких полей таблицы BlockUnblock брать даты блокировок. При настройке 1 работает так - если у блокировки DateFrom=minDate, то берутся даты из BlockDateFrom и BlockDateTo, если у блокировки DateFrom&gt;minDate, то берутся даты из DateFrom и DateTo. При настройке 0 работает так - берутся даты блокировок из DateFrom и DateTo. При настройке -1 работает старый механизм.</Column>
+            <Column Id="-1" ValueType="INTEGER">99902138</Column>
+          </Row>
+          <Row Number="12299">
+            <Column Id="6157" ValueType="DATETIME">2038-01-01 03:00:01 Europe/Moscow</Column>
+            <Column Id="6156" ValueType="DATETIME">1970-01-01 03:00:01 Europe/Moscow</Column>
+            <Column Id="6155" ValueType="INTEGER">1</Column>
+            <Column Id="6154" ValueType="STRING">PPD1.75_use_synchronous_call</Column>
+            <Column Id="13454" ValueType="STRING"/>
+            <Column Id="12458" ValueType="STRING">1 - Использовать синхронные вызовы дочерних событий для 1.75</Column>
+            <Column Id="-1" ValueType="INTEGER">12299</Column>
+          </Row>
+          <Row Number="13323">
+            <Column Id="6157" ValueType="DATETIME">2038-01-01 03:00:01 Europe/Moscow</Column>
+            <Column Id="6156" ValueType="DATETIME">1970-01-01 03:00:01 Europe/Moscow</Column>
+            <Column Id="6155" ValueType="INTEGER">0</Column>
+            <Column Id="6154" ValueType="STRING">RTMBlockUnblock</Column>
+            <Column Id="13454" ValueType="STRING"/>
+            <Column Id="12458" ValueType="STRING">1 -</Column>
+            <Column Id="-1" ValueType="INTEGER">13323</Column>
+          </Row>
+          <Row Number="2">
+            <Column Id="6157" ValueType="DATETIME">2024-12-31 23:59:59 Europe/Moscow</Column>
+            <Column Id="6156" ValueType="DATETIME">2010-01-01 00:00:00 Europe/Moscow</Column>
+            <Column Id="6155" ValueType="INTEGER">1</Column>
+            <Column Id="6154" ValueType="STRING">use_corpBudget</Column>
+            <Column Id="13454" ValueType="STRING"/>
+            <Column Id="12458" ValueType="STRING"/>
+            <Column Id="-1" ValueType="INTEGER">2</Column>
+          </Row>
+          <Row Number="1026">
+            <Column Id="6157" ValueType="DATETIME">2024-12-31 23:59:59 Europe/Moscow</Column>
+            <Column Id="6156" ValueType="DATETIME">2010-01-01 00:00:00 Europe/Moscow</Column>
+            <Column Id="6155" ValueType="INTEGER">1</Column>
+            <Column Id="6154" ValueType="STRING">use_trustCategory</Column>
+            <Column Id="13454" ValueType="STRING"/>
+            <Column Id="12458" ValueType="STRING"/>
+            <Column Id="-1" ValueType="INTEGER">1026</Column>
+          </Row>
+          <Row Number="3074">
+            <Column Id="6157" ValueType="DATETIME">2024-12-31 23:59:59 Europe/Moscow</Column>
+            <Column Id="6156" ValueType="DATETIME">2010-01-01 00:00:00 Europe/Moscow</Column>
+            <Column Id="6155" ValueType="INTEGER">1</Column>
+            <Column Id="6154" ValueType="STRING">use_MK</Column>
+            <Column Id="13454" ValueType="STRING"/>
+            <Column Id="12458" ValueType="STRING"/>
+            <Column Id="-1" ValueType="INTEGER">3074</Column>
+          </Row>
+          <Row Number="3075">
+            <Column Id="6157" ValueType="DATETIME">2024-12-31 23:59:59 Europe/Moscow</Column>
+            <Column Id="6156" ValueType="DATETIME">2010-01-01 00:00:00 Europe/Moscow</Column>
+            <Column Id="6155" ValueType="INTEGER">1</Column>
+            <Column Id="6154" ValueType="STRING">use_PayPerDayDeny</Column>
+            <Column Id="13454" ValueType="STRING"/>
+            <Column Id="12458" ValueType="STRING"/>
+            <Column Id="-1" ValueType="INTEGER">3075</Column>
+          </Row>
+          <Row Number="3076">
+            <Column Id="6157" ValueType="DATETIME">2024-12-31 23:59:59 Europe/Moscow</Column>
+            <Column Id="6156" ValueType="DATETIME">2010-01-01 00:00:00 Europe/Moscow</Column>
+            <Column Id="6155" ValueType="INTEGER">1</Column>
+            <Column Id="6154" ValueType="STRING">use_denySwitchableServiceTP</Column>
+            <Column Id="13454" ValueType="STRING"/>
+            <Column Id="12458" ValueType="STRING">Использовать возможность запрета переключения для связки TP+service</Column>
+            <Column Id="-1" ValueType="INTEGER">3076</Column>
+          </Row>
+          <Row Number="99903166">
+            <Column Id="6157" ValueType="DATETIME">2037-01-01 03:00:01 Europe/Moscow</Column>
+            <Column Id="6156" ValueType="DATETIME">1970-01-01 03:00:01 Europe/Moscow</Column>
+            <Column Id="6155" ValueType="INTEGER">0</Column>
+            <Column Id="6154" ValueType="STRING">AlwaysPlusBarringServiceCode</Column>
+            <Column Id="13454" ValueType="STRING">AlwaysPlusBarringServiceCode</Column>
+            <Column Id="12458" ValueType="STRING"/>
+            <Column Id="-1" ValueType="INTEGER">99903166</Column>
+          </Row>
+          <Row Number="99902141">
+            <Column Id="6157" ValueType="DATETIME">2035-01-01 03:00:01 Europe/Moscow</Column>
+            <Column Id="6156" ValueType="DATETIME">1970-01-01 03:00:01 Europe/Moscow</Column>
+            <Column Id="6155" ValueType="INTEGER">0</Column>
+            <Column Id="6154" ValueType="STRING">AppleMusicDenyServiceCode</Column>
+            <Column Id="13454" ValueType="STRING">PE13793.1.1</Column>
+            <Column Id="12458" ValueType="STRING"/>
+            <Column Id="-1" ValueType="INTEGER">99902141</Column>
+          </Row>
+        </Table>
+      </UserDictionary>
+      <UserDictionary Name="FRS_TerminalDeviceClass">
+        <Table Id="3100">
+          <Row Number="10">
+            <Column Id="22762" ValueType="STRING">mobile</Column>
+            <Column Id="14483" ValueType="STRING">Multi</Column>
+            <Column Id="11430" ValueType="STRING">M</Column>
+            <Column Id="11429" ValueType="INTEGER">65</Column>
+            <Column Id="-1" ValueType="INTEGER">10</Column>
+          </Row>
+        </Table>
+      </UserDictionary>
+      <UserDictionary Name="EXT_Lock">
+        <Table Id="7220">
+          <Row Number="1027">
+            <Column Id="24811" ValueType="INTEGER">0</Column>
+            <Column Id="16625" ValueType="INTEGER">-1</Column>
+            <Column Id="16624" ValueType="INTEGER">-1</Column>
+            <Column Id="16623" ValueType="INTEGER">-1</Column>
+            <Column Id="16622" ValueType="INTEGER">1</Column>
+            <Column Id="16621" ValueType="INTEGER">1</Column>
+            <Column Id="16620" ValueType="INTEGER">-1</Column>
+            <Column Id="16619" ValueType="STRING">FRPARTBL</Column>
+            <Column Id="16618" ValueType="INTEGER">4111</Column>
+            <Column Id="-1" ValueType="INTEGER">1027</Column>
+          </Row>
+          <Row Number="1026">
+            <Column Id="24811" ValueType="INTEGER">0</Column>
+            <Column Id="16625" ValueType="INTEGER">-1</Column>
+            <Column Id="16624" ValueType="INTEGER">-1</Column>
+            <Column Id="16623" ValueType="INTEGER">-1</Column>
+            <Column Id="16622" ValueType="INTEGER">1</Column>
+            <Column Id="16621" ValueType="INTEGER">1</Column>
+            <Column Id="16620" ValueType="INTEGER">-1</Column>
+            <Column Id="16619" ValueType="STRING">FRBLKFIN</Column>
+            <Column Id="16618" ValueType="INTEGER">5</Column>
+            <Column Id="-1" ValueType="INTEGER">1026</Column>
+          </Row>
+        </Table>
+      </UserDictionary>
+      <UserDictionary Name="EXT_ServiceProvider">
+        <Table Id="8245">
+          <Row Number="4">
+            <Column Id="24812" ValueType="INTEGER">0</Column>
+            <Column Id="19690" ValueType="INTEGER">0</Column>
+            <Column Id="17651" ValueType="STRING">Europe/Moscow</Column>
+            <Column Id="17650" ValueType="DECIMAL">1.75</Column>
+            <Column Id="17649" ValueType="STRING">254</Column>
+            <Column Id="17648" ValueType="INTEGER">4949</Column>
+            <Column Id="17647" ValueType="STRING">254254</Column>
+            <Column Id="-1" ValueType="INTEGER">4</Column>
+          </Row>
+        </Table>
+      </UserDictionary>
+      <UserDictionary Name="FRS_Lock">
+        <Table Id="4126">
+          <Row Number="8">
+            <Column Id="12463" ValueType="INTEGER">1</Column>
+            <Column Id="12462" ValueType="INTEGER">1</Column>
+            <Column Id="12460" ValueType="STRING">FRPARTBL</Column>
+            <Column Id="12459" ValueType="INTEGER">4111</Column>
+            <Column Id="-1" ValueType="INTEGER">8</Column>
+          </Row>
+          <Row Number="20">
+            <Column Id="12463" ValueType="INTEGER">1</Column>
+            <Column Id="12462" ValueType="INTEGER">1</Column>
+            <Column Id="12460" ValueType="STRING">BL00020</Column>
+            <Column Id="12459" ValueType="INTEGER">67014</Column>
+            <Column Id="-1" ValueType="INTEGER">20</Column>
+          </Row>
+          <Row Number="18">
+            <Column Id="12463" ValueType="INTEGER">1</Column>
+            <Column Id="12462" ValueType="INTEGER">1</Column>
+            <Column Id="12460" ValueType="STRING">BL01732</Column>
+            <Column Id="12459" ValueType="INTEGER">67102</Column>
+            <Column Id="-1" ValueType="INTEGER">18</Column>
+          </Row>
+          <Row Number="15">
+            <Column Id="12463" ValueType="INTEGER">1</Column>
+            <Column Id="12462" ValueType="INTEGER">1</Column>
+            <Column Id="12460" ValueType="STRING">BL01751</Column>
+            <Column Id="12459" ValueType="INTEGER">67103</Column>
+            <Column Id="-1" ValueType="INTEGER">15</Column>
+          </Row>
+          <Row Number="21">
+            <Column Id="12463" ValueType="INTEGER">1</Column>
+            <Column Id="12462" ValueType="INTEGER">1</Column>
+            <Column Id="12460" ValueType="STRING">BL01752</Column>
+            <Column Id="12459" ValueType="INTEGER">67099</Column>
+            <Column Id="-1" ValueType="INTEGER">21</Column>
+          </Row>
+          <Row Number="14">
+            <Column Id="12463" ValueType="INTEGER">1</Column>
+            <Column Id="12462" ValueType="INTEGER">1</Column>
+            <Column Id="12460" ValueType="STRING">BL01753</Column>
+            <Column Id="12459" ValueType="INTEGER">67097</Column>
+            <Column Id="-1" ValueType="INTEGER">14</Column>
+          </Row>
+          <Row Number="16">
+            <Column Id="12463" ValueType="INTEGER">1</Column>
+            <Column Id="12462" ValueType="INTEGER">1</Column>
+            <Column Id="12460" ValueType="STRING">BL02631</Column>
+            <Column Id="12459" ValueType="INTEGER">70094</Column>
+            <Column Id="-1" ValueType="INTEGER">16</Column>
+          </Row>
+          <Row Number="27">
+            <Column Id="12463" ValueType="INTEGER">1</Column>
+            <Column Id="12462" ValueType="INTEGER">1</Column>
+            <Column Id="12460" ValueType="STRING">BL04431</Column>
+            <Column Id="12459" ValueType="INTEGER">80434</Column>
+            <Column Id="-1" ValueType="INTEGER">27</Column>
+          </Row>
+          <Row Number="25">
+            <Column Id="12463" ValueType="INTEGER">1</Column>
+            <Column Id="12462" ValueType="INTEGER">0</Column>
+            <Column Id="12460" ValueType="STRING">BL04511</Column>
+            <Column Id="12459" ValueType="INTEGER">80814</Column>
+            <Column Id="-1" ValueType="INTEGER">25</Column>
+          </Row>
+          <Row Number="28">
+            <Column Id="12463" ValueType="INTEGER">1</Column>
+            <Column Id="12462" ValueType="INTEGER">0</Column>
+            <Column Id="12460" ValueType="STRING">BL04611</Column>
+            <Column Id="12459" ValueType="INTEGER">81016</Column>
+            <Column Id="-1" ValueType="INTEGER">28</Column>
+          </Row>
+          <Row Number="24">
+            <Column Id="12463" ValueType="INTEGER">1</Column>
+            <Column Id="12462" ValueType="INTEGER">1</Column>
+            <Column Id="12460" ValueType="STRING">BL04651</Column>
+            <Column Id="12459" ValueType="INTEGER">81198</Column>
+            <Column Id="-1" ValueType="INTEGER">24</Column>
+          </Row>
+          <Row Number="29">
+            <Column Id="12463" ValueType="INTEGER">1</Column>
+            <Column Id="12462" ValueType="INTEGER">0</Column>
+            <Column Id="12460" ValueType="STRING">BL04691</Column>
+            <Column Id="12459" ValueType="INTEGER">81691</Column>
+            <Column Id="-1" ValueType="INTEGER">29</Column>
+          </Row>
+          <Row Number="19">
+            <Column Id="12463" ValueType="INTEGER">1</Column>
+            <Column Id="12462" ValueType="INTEGER">1</Column>
+            <Column Id="12460" ValueType="STRING">BL80000</Column>
+            <Column Id="12459" ValueType="INTEGER">67076</Column>
+            <Column Id="-1" ValueType="INTEGER">19</Column>
+          </Row>
+          <Row Number="2">
+            <Column Id="12463" ValueType="INTEGER">1</Column>
+            <Column Id="12462" ValueType="INTEGER">1</Column>
+            <Column Id="12460" ValueType="STRING">FRBLKCHK</Column>
+            <Column Id="12459" ValueType="INTEGER">14</Column>
+            <Column Id="-1" ValueType="INTEGER">2</Column>
+          </Row>
+          <Row Number="23">
+            <Column Id="12463" ValueType="INTEGER">1</Column>
+            <Column Id="12462" ValueType="INTEGER">1</Column>
+            <Column Id="12460" ValueType="STRING">FRBLKCUDATA</Column>
+            <Column Id="12459" ValueType="INTEGER">77441</Column>
+            <Column Id="-1" ValueType="INTEGER">23</Column>
+          </Row>
+          <Row Number="3">
+            <Column Id="12463" ValueType="INTEGER">1</Column>
+            <Column Id="12462" ValueType="INTEGER">1</Column>
+            <Column Id="12460" ValueType="STRING">FRBLKEND</Column>
+            <Column Id="12459" ValueType="INTEGER">17</Column>
+            <Column Id="-1" ValueType="INTEGER">3</Column>
+          </Row>
+          <Row Number="4">
+            <Column Id="12463" ValueType="INTEGER">1</Column>
+            <Column Id="12462" ValueType="INTEGER">1</Column>
+            <Column Id="12460" ValueType="STRING">FRBLKFIN</Column>
+            <Column Id="12459" ValueType="INTEGER">5</Column>
+            <Column Id="-1" ValueType="INTEGER">4</Column>
+          </Row>
+          <Row Number="7">
+            <Column Id="12463" ValueType="INTEGER">1</Column>
+            <Column Id="12462" ValueType="INTEGER">1</Column>
+            <Column Id="12460" ValueType="STRING">FRBLKINIT</Column>
+            <Column Id="12459" ValueType="INTEGER">1</Column>
+            <Column Id="-1" ValueType="INTEGER">7</Column>
+          </Row>
+          <Row Number="10">
+            <Column Id="12463" ValueType="INTEGER">1</Column>
+            <Column Id="12462" ValueType="INTEGER">1</Column>
+            <Column Id="12460" ValueType="STRING">FRBLKPAY</Column>
+            <Column Id="12459" ValueType="INTEGER">5907</Column>
+            <Column Id="-1" ValueType="INTEGER">10</Column>
+          </Row>
+          <Row Number="1">
+            <Column Id="12463" ValueType="INTEGER">1</Column>
+            <Column Id="12462" ValueType="INTEGER">1</Column>
+            <Column Id="12460" ValueType="STRING">FRBLKTIME</Column>
+            <Column Id="12459" ValueType="INTEGER">11</Column>
+            <Column Id="-1" ValueType="INTEGER">1</Column>
+          </Row>
+          <Row Number="6">
+            <Column Id="12463" ValueType="INTEGER">1</Column>
+            <Column Id="12462" ValueType="INTEGER">0</Column>
+            <Column Id="12460" ValueType="STRING">FRBLKUSER</Column>
+            <Column Id="12459" ValueType="INTEGER">2</Column>
+            <Column Id="-1" ValueType="INTEGER">6</Column>
+          </Row>
+          <Row Number="11">
+            <Column Id="12463" ValueType="INTEGER">1</Column>
+            <Column Id="12462" ValueType="INTEGER">1</Column>
+            <Column Id="12460" ValueType="STRING">UIT26001</Column>
+            <Column Id="12459" ValueType="INTEGER">53674</Column>
+            <Column Id="-1" ValueType="INTEGER">11</Column>
+          </Row>
+          <Row Number="22">
+            <Column Id="12463" ValueType="INTEGER">1</Column>
+            <Column Id="12462" ValueType="INTEGER">1</Column>
+            <Column Id="12460" ValueType="STRING">_200720171021652</Column>
+            <Column Id="12459" ValueType="INTEGER">76075</Column>
+            <Column Id="-1" ValueType="INTEGER">22</Column>
+          </Row>
+          <Row Number="26">
+            <Column Id="12463" ValueType="INTEGER">1</Column>
+            <Column Id="12462" ValueType="INTEGER">1</Column>
+            <Column Id="12460" ValueType="STRING">_200729171021645</Column>
+            <Column Id="12459" ValueType="INTEGER">76034</Column>
+            <Column Id="-1" ValueType="INTEGER">26</Column>
+          </Row>
+          <Row Number="13">
+            <Column Id="12463" ValueType="INTEGER">1</Column>
+            <Column Id="12462" ValueType="INTEGER">1</Column>
+            <Column Id="12460" ValueType="STRING">cod_Block_0903_1</Column>
+            <Column Id="12459" ValueType="INTEGER">61468</Column>
+            <Column Id="-1" ValueType="INTEGER">13</Column>
+          </Row>
+          <Row Number="12">
+            <Column Id="12463" ValueType="INTEGER">1</Column>
+            <Column Id="12462" ValueType="INTEGER">1</Column>
+            <Column Id="12460" ValueType="STRING">cod_Block_2402_1_full_cod_Bl02</Column>
+            <Column Id="12459" ValueType="INTEGER">60996</Column>
+            <Column Id="-1" ValueType="INTEGER">12</Column>
+          </Row>
+        </Table>
+      </UserDictionary>
+      <UserDictionary Name="SwitchableFromServiceGlobal">
+        <Table Id="6177">
+          <Row Number="4111">
+            <Column Id="15558" ValueType="INTEGER">0</Column>
+            <Column Id="15557" ValueType="INTEGER">0</Column>
+            <Column Id="15556" ValueType="INTEGER">1</Column>
+            <Column Id="15555" ValueType="STRING">Apple Music</Column>
+            <Column Id="15554" ValueType="INTEGER">1</Column>
+            <Column Id="15553" ValueType="STRING">Month</Column>
+            <Column Id="15552" ValueType="INTEGER">1</Column>
+            <Column Id="15551" ValueType="INTEGER">0</Column>
+            <Column Id="15550" ValueType="INTEGER">0</Column>
+            <Column Id="15549" ValueType="INTEGER">0</Column>
+            <Column Id="15548" ValueType="INTEGER">0</Column>
+            <Column Id="15547" ValueType="INTEGER">0</Column>
+            <Column Id="15546" ValueType="STRING">PE13585.1.1</Column>
+            <Column Id="-1" ValueType="INTEGER">4111</Column>
+          </Row>
+        </Table>
+      </UserDictionary>
+      <UserDictionary Name="serviceProviderUprsCodeTimeZone">
+        <Table Id="3">
+          <Row Number="3331">
+            <Column Id="6182" ValueType="INTEGER">111</Column>
+            <Column Id="6153" ValueType="STRING">NorthWestward</Column>
+            <Column Id="5128" ValueType="INTEGER">4949</Column>
+            <Column Id="5127" ValueType="STRING">МТС Санкт-Петербург</Column>
+            <Column Id="5126" ValueType="INTEGER">180</Column>
+            <Column Id="5125" ValueType="STRING">254254</Column>
+            <Column Id="11328" ValueType="DATETIME">2038-01-01 00:00:00 Europe/Moscow</Column>
+            <Column Id="11327" ValueType="DATETIME">1980-01-01 00:00:00 Europe/Moscow</Column>
+            <Column Id="11321" ValueType="STRING">254</Column>
+            <Column Id="11316" ValueType="STRING"/>
+            <Column Id="-1" ValueType="INTEGER">3331</Column>
+          </Row>
+        </Table>
+      </UserDictionary>
+      <UserDictionary Name="TrustCategory">
+        <Table Id="6179"/>
+      </UserDictionary>
+      <UserDictionary Name="MarketingCategory">
+        <Table Id="6171"/>
+      </UserDictionary>
+      <UserDictionary Name="NonSwitchableServicesTP">
+        <Table Id="6173">
+          <Row Number="4100">
+            <Column Id="15530" ValueType="DATETIME">2038-01-01 06:00:00 Europe/Moscow</Column>
+            <Column Id="15529" ValueType="DATETIME">2017-09-11 11:06:07 Europe/Moscow</Column>
+            <Column Id="15528" ValueType="INTEGER">111</Column>
+            <Column Id="15527" ValueType="INTEGER">0</Column>
+            <Column Id="15526" ValueType="STRING">SMBPTSPB01</Column>
+            <Column Id="15525" ValueType="STRING">PE13585.1.1</Column>
+            <Column Id="-1" ValueType="INTEGER">4100</Column>
+          </Row>
+        </Table>
+      </UserDictionary>
+      <UserDictionary Name="NonSwitchableServices">
+        <Table Id="6172">
+          <Row Number="2049">
+            <Column Id="15524" ValueType="DATETIME">2030-01-01 03:00:00 Europe/Moscow</Column>
+            <Column Id="15523" ValueType="DATETIME">2018-05-11 09:42:41 Europe/Moscow</Column>
+            <Column Id="15522" ValueType="INTEGER">0</Column>
+            <Column Id="15521" ValueType="STRING">254254</Column>
+            <Column Id="15520" ValueType="STRING">PE13585.1.1</Column>
+            <Column Id="-1" ValueType="INTEGER">2049</Column>
+          </Row>
+        </Table>
+      </UserDictionary>
+    </UserDictionaries>
+  </InitContext>
+  <CustomerNames>
+    <Customer Id="92603" Name="92603"/>
+    <Customer Id="92605" Name="92605"/>
+    <Customer Id="92604" Name="92604"/>
+    <Customer Id="92606" Name="92606"/>
+  </CustomerNames>
+  <EndpointDispatcherOutputs/>
+  <Test RatingMethodType="RATE_EVENT" StartNodeId="44290" TreeVersionId="9297">
+    <ScenarioContext EventTypeId="22577" ResultCode="0">
+      <Tasks/>
+      <Messages/>
+      <Session>
+        <Properties/>
+      </Session>
+      <OutRecords>
+        <OutRecord Id="1025">
+          <Properties>
+            <Property Id="1025" ValueType="INTEGER">0</Property>
+          </Properties>
+          <Tables/>
+        </OutRecord>
+      </OutRecords>
+      <ScenarioContexts/>
+    </ScenarioContext>
+    <Customers>
+      <Customer EntityDefId="2053" EntityId="92603">
+        <Properties>
+          <Property DateFrom="2018-06-20 08:00:00Z" DateTo="2038-01-19 03:14:07Z" Id="14490" ValueType="DATETIME">2018-06-20 08:00:00Z</Property>
+          <Property DateFrom="2018-06-20 08:00:00Z" DateTo="2038-01-19 03:14:07Z" Id="14484" ValueType="STRING">1</Property>
+          <Property DateFrom="2018-06-20 08:00:00Z" DateTo="2038-01-19 03:14:07Z" Id="14483" ValueType="INTEGER">111</Property>
+          <Property DateFrom="2018-06-20 08:00:00Z" DateTo="2038-01-19 03:14:07Z" Id="14482" ValueType="INTEGER">100235937</Property>
+          <Property DateFrom="2018-06-20 08:00:00Z" DateTo="2038-01-19 03:14:07Z" Id="-7" ValueType="DATETIME">2038-01-19 03:14:07Z</Property>
+          <Property DateFrom="2018-06-20 08:00:00Z" DateTo="2038-01-19 03:14:07Z" Id="-6" ValueType="DATETIME">2018-06-20 08:00:00Z</Property>
+          <Property DateFrom="2018-06-20 08:00:00Z" DateTo="2038-01-19 03:14:07Z" Id="-3" ValueType="INTEGER">2</Property>
+          <Property DateFrom="2018-06-20 08:00:00Z" DateTo="2038-01-19 03:14:07Z" Id="-2" ValueType="INTEGER">92603</Property>
+          <Property DateFrom="2018-06-20 08:00:00Z" DateTo="2038-01-19 03:14:07Z" Id="-1" ValueType="INTEGER">2053</Property>
+        </Properties>
+        <Tables/>
+        <Counters/>
+        <Relations/>
+      </Customer>
+      <Customer EntityDefId="2051" EntityId="92605">
+        <Properties>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="8200" ValueType="STRING">254254</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="5122" ValueType="INTEGER">100243197</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="2" ValueType="INTEGER">454412072383</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14503" ValueType="STRING">1</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14502" ValueType="STRING">1</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14500" ValueType="STRING">810</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14499" ValueType="STRING">1</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14498" ValueType="STRING">1</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14494" ValueType="STRING">1</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14490" ValueType="DATETIME">2018-06-20 08:00:00Z</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14488" ValueType="STRING">ST01</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14486" ValueType="STRING">ST</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14477" ValueType="STRING">8</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14474" ValueType="STRING">254</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="-7" ValueType="DATETIME">2038-01-19 06:14:07 Europe/Moscow</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="-6" ValueType="DATETIME">2018-06-20 11:00:00 Europe/Moscow</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="-5" ValueType="STRING">Europe/Moscow</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="-3" ValueType="INTEGER">2</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="-2" ValueType="INTEGER">92605</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="-1" ValueType="INTEGER">2051</Property>
+        </Properties>
+        <Tables/>
+        <Counters/>
+        <Relations>
+          <Relation ChildCustomerId="92605" ConditionParameters="&lt;Conditions /&gt;" ConditionTypeId="0" DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" HierarchyRelationId="1027" ParentCustomerId="92604" Priority="0" RuleParameters="&lt;Parameters /&gt;" RuleTypeId="0"/>
+        </Relations>
+      </Customer>
+      <Customer EntityDefId="2052" EntityId="92604">
+        <Properties>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="8200" ValueType="STRING">254254</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14497" ValueType="STRING">1</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14496" ValueType="STRING">3</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14495" ValueType="STRING">1</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14494" ValueType="STRING">1</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14493" ValueType="STRING">1</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14492" ValueType="STRING">1</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14490" ValueType="DATETIME">2018-06-20 08:00:00Z</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14489" ValueType="INTEGER">0</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14480" ValueType="STRING">100</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14479" ValueType="STRING">125400012337</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14478" ValueType="INTEGER">100224923</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14474" ValueType="STRING">254</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="-7" ValueType="DATETIME">2038-01-19 06:14:07 Europe/Moscow</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="-6" ValueType="DATETIME">2018-06-20 11:00:00 Europe/Moscow</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="-5" ValueType="STRING">Europe/Moscow</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="-3" ValueType="INTEGER">2</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="-2" ValueType="INTEGER">92604</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="-1" ValueType="INTEGER">2052</Property>
+        </Properties>
+        <Tables/>
+        <Counters/>
+        <Relations>
+          <Relation ChildCustomerId="92604" ConditionParameters="&lt;Conditions /&gt;" ConditionTypeId="0" DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" HierarchyRelationId="1026" ParentCustomerId="92603" Priority="0" RuleParameters="&lt;Parameters /&gt;" RuleTypeId="0"/>
+        </Relations>
+      </Customer>
+      <Customer EntityDefId="2050" EntityId="92606">
+        <Properties>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="8200" ValueType="STRING">254254</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="3" ValueType="STRING">77771000113</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14505" ValueType="STRING">M</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14504" ValueType="STRING">89702500107777122361</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14494" ValueType="STRING">1</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14490" ValueType="DATETIME">2018-06-20 08:00:00Z</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14487" ValueType="STRING">SMBPTSPB01</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="14476" ValueType="STRING">250010777712236</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="1" ValueType="INTEGER">100273175</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="-7" ValueType="DATETIME">2038-01-19 06:14:07 Europe/Moscow</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="-6" ValueType="DATETIME">2018-06-20 11:00:00 Europe/Moscow</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="-5" ValueType="STRING">Europe/Moscow</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="-3" ValueType="INTEGER">2</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="-2" ValueType="INTEGER">92606</Property>
+          <Property DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" Id="-1" ValueType="INTEGER">2050</Property>
+        </Properties>
+        <Tables>
+          <Table Id="5127"/>
+          <Table Id="2053"/>
+          <Table Id="2055">
+            <Row Number="0">
+              <Column Id="2117" Name="RowID" ValueType="INTEGER">137193</Column>
+              <Column Id="4165" Name="IsBlocked" ValueType="INTEGER">0</Column>
+              <Column Id="5189" Name="ProductStatusCode" ValueType="STRING">ACTIVE</Column>
+              <Column Id="2118" Name="DateFrom" ValueType="DATETIME">2018-06-20 11:00:00 Europe/Moscow</Column>
+              <Column Id="2119" Name="DateTo" ValueType="DATETIME">2038-01-19 06:14:07 Europe/Moscow</Column>
+              <Column Id="2120" Name="TDServiceId" ValueType="INTEGER">2020522</Column>
+              <Column Id="2121" Name="ServiceCode" ValueType="STRING">CB101</Column>
+              <Column Id="2122" Name="IsActivated" ValueType="INTEGER">1</Column>
+              <Column Id="2123" Name="IsPeriodicalChargingStarted" ValueType="INTEGER">1</Column>
+              <Column Id="2124" Name="IsOneTimeCharged" ValueType="INTEGER">1</Column>
+              <Column Id="2126" Name="Quantity" ValueType="INTEGER">1</Column>
+              <Column Id="2127" Name="TariffPlanCode" ValueType="STRING"/>
+              <Column Id="2128" Name="TerminalDeviceId" ValueType="INTEGER">100273175</Column>
+            </Row>
+            <Row Number="1">
+              <Column Id="2117" Name="RowID" ValueType="INTEGER">137195</Column>
+              <Column Id="4165" Name="IsBlocked" ValueType="INTEGER">0</Column>
+              <Column Id="5189" Name="ProductStatusCode" ValueType="STRING">ACTIVE</Column>
+              <Column Id="2118" Name="DateFrom" ValueType="DATETIME">2018-06-20 11:09:48 Europe/Moscow</Column>
+              <Column Id="2119" Name="DateTo" ValueType="DATETIME">2038-01-19 06:14:07 Europe/Moscow</Column>
+              <Column Id="2120" Name="TDServiceId" ValueType="INTEGER">2020523</Column>
+              <Column Id="2121" Name="ServiceCode" ValueType="STRING">PE13585.1.1</Column>
+              <Column Id="2122" Name="IsActivated" ValueType="INTEGER">1</Column>
+              <Column Id="2123" Name="IsPeriodicalChargingStarted" ValueType="INTEGER">1</Column>
+              <Column Id="2124" Name="IsOneTimeCharged" ValueType="INTEGER">1</Column>
+              <Column Id="2126" Name="Quantity" ValueType="INTEGER">1</Column>
+              <Column Id="2127" Name="TariffPlanCode" ValueType="STRING"/>
+              <Column Id="2128" Name="TerminalDeviceId" ValueType="INTEGER">100273175</Column>
+            </Row>
+            <Row Number="2">
+              <Column Id="2117" Name="RowID" ValueType="INTEGER">137196</Column>
+              <Column Id="4165" Name="IsBlocked" ValueType="INTEGER">0</Column>
+              <Column Id="5189" Name="ProductStatusCode" ValueType="STRING">ACTIVE</Column>
+              <Column Id="2118" Name="DateFrom" ValueType="DATETIME">2018-06-20 11:09:48 Europe/Moscow</Column>
+              <Column Id="2119" Name="DateTo" ValueType="DATETIME">2038-01-19 06:14:07 Europe/Moscow</Column>
+              <Column Id="2120" Name="TDServiceId" ValueType="INTEGER">2020525</Column>
+              <Column Id="2121" Name="ServiceCode" ValueType="STRING">PE13586.1.1</Column>
+              <Column Id="2122" Name="IsActivated" ValueType="INTEGER">1</Column>
+              <Column Id="2123" Name="IsPeriodicalChargingStarted" ValueType="INTEGER">1</Column>
+              <Column Id="2124" Name="IsOneTimeCharged" ValueType="INTEGER">1</Column>
+              <Column Id="2126" Name="Quantity" ValueType="INTEGER">1</Column>
+              <Column Id="2127" Name="TariffPlanCode" ValueType="STRING"/>
+              <Column Id="2128" Name="TerminalDeviceId" ValueType="INTEGER">100273175</Column>
+            </Row>
+            <Row Number="3">
+              <Column Id="2117" Name="RowID" ValueType="INTEGER">137198</Column>
+              <Column Id="4165" Name="IsBlocked" ValueType="INTEGER">0</Column>
+              <Column Id="5189" Name="ProductStatusCode" ValueType="STRING">ACTIVE</Column>
+              <Column Id="2118" Name="DateFrom" ValueType="DATETIME">2018-06-20 11:09:48 Europe/Moscow</Column>
+              <Column Id="2119" Name="DateTo" ValueType="DATETIME">2018-08-20 11:15:01 Europe/Moscow</Column>
+              <Column Id="2120" Name="TDServiceId" ValueType="INTEGER">2020524</Column>
+              <Column Id="2121" Name="ServiceCode" ValueType="STRING">PE13587.1.1</Column>
+              <Column Id="2122" Name="IsActivated" ValueType="INTEGER">1</Column>
+              <Column Id="2123" Name="IsPeriodicalChargingStarted" ValueType="INTEGER">1</Column>
+              <Column Id="2124" Name="IsOneTimeCharged" ValueType="INTEGER">1</Column>
+              <Column Id="2126" Name="Quantity" ValueType="INTEGER">1</Column>
+              <Column Id="2127" Name="TariffPlanCode" ValueType="STRING"/>
+              <Column Id="2128" Name="TerminalDeviceId" ValueType="INTEGER">100273175</Column>
+            </Row>
+          </Table>
+          <Table Id="1027"/>
+          <Table Id="2056"/>
+          <Table Id="4103"/>
+          <Table Id="2057"/>
+          <Table Id="1025">
+            <Row Number="0">
+              <Column Id="1025" Name="RowID" ValueType="INTEGER">4471</Column>
+              <Column Id="1026" Name="DateFrom" ValueType="DATETIME">2018-06-20 11:09:48 Europe/Moscow</Column>
+              <Column Id="1027" Name="DateTo" ValueType="DATETIME">2038-01-19 06:14:07 Europe/Moscow</Column>
+              <Column Id="1028" Name="productId" ValueType="INTEGER">2020523</Column>
+              <Column Id="1029" Name="globalServiceCode" ValueType="STRING">PE13585.1.1</Column>
+              <Column Id="1030" Name="lastActivationDate" ValueType="DATETIME">2018-07-21 00:00:00 Europe/Moscow</Column>
+              <Column Id="1046" Name="IsActivated" ValueType="INTEGER">1</Column>
+              <Column Id="1031" Name="nextTarificationDate" ValueType="DATETIME">2018-09-21 00:00:00 Europe/Moscow</Column>
+              <Column Id="1047" Name="IsPeriodicalChargingStarted" ValueType="INTEGER">1</Column>
+              <Column Id="1032" Name="currentStatus" ValueType="INTEGER">1</Column>
+              <Column Id="1033" Name="activeFrom" ValueType="DATETIME">2018-09-13 11:01:54 Europe/Moscow</Column>
+            </Row>
+          </Table>
+          <Table Id="1026">
+            <Row Number="0">
+              <Column Id="3142" Name="eventDateFrom" ValueType="DATETIME">1970-01-01 03:00:01 Europe/Moscow</Column>
+              <Column Id="3143" Name="eventDateTo" ValueType="DATETIME">2038-01-19 06:14:07 Europe/Moscow</Column>
+              <Column Id="2072" Name="blockDateFrom" ValueType="DATETIME">2018-09-13 11:33:48 Europe/Moscow</Column>
+              <Column Id="2073" Name="blockDateTo" ValueType="DATETIME">2018-09-13 11:44:49 Europe/Moscow</Column>
+              <Column Id="1034" Name="RowID" ValueType="INTEGER">15137</Column>
+              <Column Id="1035" Name="DateFrom" ValueType="DATETIME">2018-09-13 11:33:48 Europe/Moscow</Column>
+              <Column Id="1036" Name="DateTo" ValueType="DATETIME">2018-09-13 11:44:49 Europe/Moscow</Column>
+              <Column Id="1038" Name="BlockServiceCode" ValueType="STRING">FRPARTBL</Column>
+            </Row>
+            <GeneratedRows/>
+          </Table>
+          <Table Id="2052"/>
+        </Tables>
+        <Counters/>
+        <Relations>
+          <Relation ChildCustomerId="92606" ConditionParameters="&lt;Conditions /&gt;" ConditionTypeId="0" DateFrom="2018-06-20 11:00:00 Europe/Moscow" DateTo="2038-01-19 06:14:07 Europe/Moscow" HierarchyRelationId="1028" ParentCustomerId="92605" Priority="0" RuleParameters="&lt;Parameters /&gt;" RuleTypeId="0"/>
+        </Relations>
+      </Customer>
+    </Customers>
+    <EndpointDispatcherInputs/>
+  </Test>
+</SmbpDebugConfiguration>
