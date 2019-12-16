@@ -12,8 +12,8 @@ second_fix = [] # список файлов для второй доработк
 xml_files = []
 renamed = []
 
-conn = MySQLdb.connect(host='10.40.107.84', user='sys',
-                       passwd='QswrUFAjySzdWIyuSAzK', charset='utf8')
+conn = MySQLdb.connect(host='your IP', user='sys',
+                       passwd='your pass', charset='utf8')
 cur = conn.cursor()
 query = "select EventTypeId, Name from META.EventType group by Name;"
 b = cur.execute(query)
