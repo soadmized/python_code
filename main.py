@@ -20,25 +20,22 @@ user_list = [{'id': 1, 'name': 'Alex', 'username': 'alex111', 'email': 'alex@mai
 
 
 path = './tasks'
-
-
-#dir_files = os.listdir(path)
-
-
-#main_prompt = ''
-#task_prompt = ''
 new_time = time.ctime()
 old_time = ''
 report_name = ''
 new_name = ''
 
-
+# создание директории для отчетов
+try:
+    os.mkdir(path)
+except FileExistsError:
+    pass
+os.chdir(path)
 # формирование строки с инфой о юзере и задачами
 for user in user_list:
+
     report_name = '{}.txt'.format(user['username'])
     new_name = '{0}_{1}.txt'.format(user['username'], old_time)
-    
-
 
 
     # это должно быть во вложенном for
@@ -71,31 +68,23 @@ for user in user_list:
             uncompleted_task_prompt += task_prompt
         
     main_prompt += uncompleted_task_prompt
+    old_time = new_time
+    if report_name in os.listdir():
+        # os.chdir(path)
+        os.rename(report_name, new_name)
+        time.sleep(0.5)
+        with open(report_name, 'w+') as file:
+            file.write(main_prompt)
+    else:
+        # os.chdir(path)
+        with open(report_name, 'w+') as file:
+            file.write(main_prompt)
         
     print(main_prompt + '\n')
-    #print(completed_task_prompt+'\n')
-    old_time = new_time
 
 
 
-
-# создание директории для отчетов
-try:
-    os.mkdir(path)
-except OSError:
-    pass
 
 # проверка, есть ли такой отчет. Если есть, старый переименовать, создать новый. Если нет, создать новый
 #dir_files = os.listdir(path)
-if report_name in os.listdir(path):
-    os.chdir(path)
-    os.rename(report_name, new_name)
-    time.sleep(0.05)
-    with open(report_name, 'w+') as file:
-        file.write(main_prompt)
-else:
-    os.chdir(path)
-    with open(report_name, 'w+') as file:
-        file.write(main_prompt)
-#d = datetime()
-#print(d.isoformat(sep='T'))
+
