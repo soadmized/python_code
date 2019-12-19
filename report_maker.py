@@ -4,6 +4,29 @@ import os
 import time
 from datetime import datetime
 
+def get_user_info(user_url, task_url):
+
+    user_list = []
+    get_raw_user = requests.get(user_url)
+    parsed_raw_user = json.loads(get_raw_user.text)
+    get_raw_task = requests.get(task_url)
+    parsed_raw_task = json.loads(get_raw_task.text)
+
+    for user in parsed_raw_user:
+        user_attr = {'id': user['id'], 'name': user['name'], 'username': user['username'], 'email': user['email'],
+                     'company': user['company']['name'], 'completed': [], 'uncompleted': []}
+        user_list.append(user_attr)
+
+    for task in parsed_raw_task:
+        for user in user_list:
+            if task['userId'] == user['id']:
+                if task['completed'] == True:
+                    user['completed'].append(task['title'])
+                else:
+                    user['uncompleted'].append(task['title'])
+    return user_list
+
+
 def get_users(user_url):
     """
     Function is defined to get list of user with required attributes
@@ -54,7 +77,7 @@ def get_all(user_url, task_url):
 if __name__ == '__main__':
     user_url = 'https://jsonplaceholder.typicode.com/users'
     task_url = 'https://jsonplaceholder.typicode.com/todos'
-    user_list = get_all(user_url, task_url)
+    user_list = get_user_info(user_url, task_url)
     print(user_list[0]) # чтоб было перед глазами
 
     path = './tasks'
