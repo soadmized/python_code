@@ -16,47 +16,46 @@ def get_users(user_url):
     parsed_raw = json.loads(get_raw.text)
     for user in parsed_raw:
         user_attr = {'id': user['id'], 'name': user['name'], 'username': user['username'], 'email': user['email'],
-                     'company': user['company']['name']}
+                     'company': user['company']['name'], 'completed': [], 'uncompleted': []}
         user_list.append(user_attr)
     return user_list
 
 
-def get_tasks(task_url):
+def get_all(user_url, task_url):
     """
+    переписать!!!
     Function is defined to get list of tasks for each user
     :param task_url: url to users tasks
     :return: task_list: list of dicts, each one constains all tasks for defined user
 
     """
-    task_list = []
+    user_list = get_users(user_url)
     get_raw = requests.get(task_url)
     parsed_raw = json.loads(get_raw.text)
 
-    for task in parsed_raw:
+    '''for task in parsed_raw:
         task_report = {'id': None, 'completed': [], 'gedanken': []}
         task_report['id'] = task['userId']
         if task_report in task_list:
             pass
         else:
-            task_list.append(task_report)
+            task_list.append(task_report)'''
 
-    for task_i in parsed_raw:
-        for task_j in task_list:
-            if task_i['userId'] == task_j['id']:
-                if task_i['completed'] == True:
-                    task_j['completed'].append(task_i['title'])
+    for task in parsed_raw:
+        for user in user_list:
+            if task['userId'] == user['id']:
+                if task['completed'] == True:
+                    user['completed'].append(task['title'])
                 else:
-                    task_j['gedanken'].append(task_i['title'])
-    return task_list
+                    user['uncompleted'].append(task['title'])
+    return user_list
 
 
 if __name__ == '__main__':
     user_url = 'https://jsonplaceholder.typicode.com/users'
     task_url = 'https://jsonplaceholder.typicode.com/todos'
-    user_list = get_users(user_url)
-    task_list = get_tasks(task_url)
-    print(user_list[0]) # чтоб были перед глазами
-    print(task_list[0])
+    user_list = get_all(user_url, task_url)
+    print(user_list[0]) # чтоб было перед глазами
 
     path = './tasks'
     try:
@@ -79,5 +78,5 @@ if __name__ == '__main__':
         os.chdir(path)
         with open(report_name, 'w+', encoding='utf-8') as file:
             file.write("{0}_{1}_{2}".format(user_list[0]['name'], user_list[0]['username'], user_list[0]['company']))
-    d = datetime()
-    print(d.isoformat(sep='T'))
+    #d = datetime()
+    #print(d.isoformat(sep='T'))
