@@ -109,6 +109,8 @@ def create_report(user_list, path):
         new_name = '{0}_{1}.txt'.format(user['username'], title_report_time[:-3])
 
         if current_report_name in os.listdir():  # check for existing reports
+            if new_name in os.listdir():
+                new_name = '{0}_{1}.txt'.format(user['username'], title_report_time)
             os.rename(current_report_name, new_name)
             time.sleep(0.4) # !!! uncomment this if there is a problem with rename and add new reports !!!
             with open(current_report_name, 'w') as file:
