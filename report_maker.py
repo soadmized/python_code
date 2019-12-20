@@ -4,7 +4,6 @@ import requests
 import json
 import os
 import time
-from datetime import datetime
 
 
 def get_user_info(user_url, task_url):
@@ -57,14 +56,13 @@ def create_report(user_list, path):
     :param user_list: list of dicts, each one contains
                       info and tasks for every single user (result of get_user_info())
     :param path: path to reports dir
-    :return: 0 
+    :return: 0
     """
 
     try:  # create dir for reports
         os.mkdir(path)
     except FileExistsError:
         pass
-
 
     current_time = time.strftime("%d.%m.%Y %H:%M", time.localtime()) # get current time
     cur_time_other_format = time.strftime("%Y-%m-%dT%H:%M:%S", time.localtime()) # same but for report title
@@ -76,7 +74,6 @@ def create_report(user_list, path):
     else:
         with open('do_not_remove.txt', 'w+') as file:
             title_report_time = file.read()
-
 
     os.chdir(path)
 
@@ -132,6 +129,6 @@ def create_report(user_list, path):
 if __name__ == '__main__':
     user_url = 'https://jsonplaceholder.typicode.com/users'
     task_url = 'https://jsonplaceholder.typicode.com/todos'
-    path = r'./tasks'
+    path = './tasks'
     user_list = get_user_info(user_url, task_url)
     create_report(user_list, path)
