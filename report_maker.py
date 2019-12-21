@@ -83,14 +83,17 @@ def create_report(user_list, path):
                                                   current_time,
                                                   user['company'], )
         completed_task_prompt = '\n\nЗавершенные задачи:'
-        uncompleted_task_prompt = '\n\nНезавершенные задачи:'
+        uncompleted_task_prompt = '\n\nОставшиеся задачи:'
 
         if len(user['completed']) == 0:  # if user doesnt have completed tasks
             task_prompt = '\nNo tasks.'
             completed_task_prompt += task_prompt
         else:
             for task in user['completed']:
-                task_prompt = '\n{}'.format(task)
+                if len(task) > 50:
+                    task_prompt = '\n{}...'.format(task[:50])
+                else:
+                    task_prompt = '\n{}'.format(task)
                 completed_task_prompt += task_prompt
 
         main_prompt += completed_task_prompt
@@ -100,7 +103,10 @@ def create_report(user_list, path):
             uncompleted_task_prompt += task_prompt
         else:
             for task in user['uncompleted']:
-                task_prompt = '\n{}'.format(task)
+                if len(task) > 50:
+                    task_prompt = '\n{}...'.format(task[:50])
+                else:
+                    task_prompt = '\n{}'.format(task)
                 uncompleted_task_prompt += task_prompt
 
         main_prompt += uncompleted_task_prompt  # completed report
