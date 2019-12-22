@@ -2,10 +2,101 @@
 
 import os
 import time
-from datetime import datetime
+
+def create_report(user_list, path):
+
+    """
+    Function is defined to create report contained completed and uncompleted tasks
+
+    :param user_list: list of dicts, each one contains
+                      info and tasks for every single user (result of get_user_info())
+    :param path: path to reports dir
+    :return: 0
+    """
+
+    try:  # create dir for reports
+        os.mkdir(path)
+    except FileExistsError:
+        pass
+
+    current_time = time.strftime("%d.%m.%Y %H:%M", time.localtime()) # get current time
+    cur_time_other_format = time.strftime("%Y-%m-%dT%H:%M:%S", time.localtime()) # same but for report title
+    time_saver = os.listdir()
+
+    if 'do_not_remove.txt' in time_saver:  # check if time saver is in dir
+        with open('do_not_remove.txt', 'r+') as file:
+            title_report_time = file.read()
+    else:
+        with open('do_not_remove.txt', 'w+') as file:
+            title_report_time = file.read()
+
+    os.chdir(path)
+
+    for user in user_list:  # forming str contained user info and tasks
+        main_prompt = "{0} <{1}> {2}\n{3}".format(user['name'],
+                                                  user['email'],
+                                                  current_time,
+                                                  user['company'], )
+        completed_task_prompt = '\n\nЗавершенные задачи:'
+        uncompleted_task_prompt = '\n\nОставшиеся задачи:'
+
+        if len(user['completed']) == 0:  # if user doesnt have completed tasks
+            task_prompt = '\nNo tasks.'
+            completed_task_prompt += task_prompt
+        else:
+            for task in user['completed']:
+                if len(task) > 50:
+                    task_prompt = '\n{}...'.format(task[:50])
+                else:
+                    task_prompt = '\n{}'.format(task)
+                completed_task_prompt += task_prompt
+
+        main_prompt += completed_task_prompt
+
+        if len(user['uncompleted']) == 0:  # if user doesnt have uncompleted tasks
+            task_prompt = '\nNo tasks.'
+            uncompleted_task_prompt += task_prompt
+        else:
+            for task in user['uncompleted']:
+                if len(task) > 50:
+                    task_prompt = '\n{}...'.format(task[:50])
+                else:
+                    task_prompt = '\n{}'.format(task)
+                uncompleted_task_prompt += task_prompt
+
+        main_prompt += uncompleted_task_prompt  # completed report
+
+        current_report_name = '{}.txt'.format(user['username'])
+        new_name = '{0}_{1}.txt'.format(user['username'], title_report_time[:-3])
+
+        if current_report_name in os.listdir():  # check for existing reports
+            if new_name in os.listdir():
+                new_name = '{0}_{1}.txt'.format(user['username'], title_report_time)
+            os.rename(current_report_name, new_name)
+            time.sleep(0.4) # !!! uncomment this if there is a problem with rename and add new reports !!!
+            with open(current_report_name, 'w') as file:
+                file.write(main_prompt)
+        else:
+            with open(current_report_name, 'w') as file:
+                file.write(main_prompt)
+
+        print('Report about user {} is ready!\n'.format(user['username']))
+
+    os.chdir('..')  # write to time saver for next report
+    with open('do_not_remove.txt', 'w') as file:
+        file.write(cur_time_other_format)
+
+    return 0
 
 
-user_list = [{'id': 1, 'name': 'Alex', 'username': 'alex111', 'email': 'alex@mail.com', 'company': 'mts it',
+if __name__ == '__main__':
+    #user_url = 'https://jsonplaceholder.typicode.com/users'
+    #task_url = 'https://jsonplaceholder.typicode.com/todos'
+    path = './tasks'
+    #user_list = get_user_info(user_url, task_url)
+
+
+    user_list = [{'id': 1, 'name': 'Alex', 'username': 'alex111', 'email': 'alex@mail.com', 'company': 'mts it',
               'completed': ['task_1.1', 'task_1.2', 'task_1.3'], 'uncompleted': ['task_1.4', 'task_1.5', 'task_1.6']},
              
              {'id': 2, 'name': 'John', 'username': 'jonny111', 'email': 'john@mail.com', 'company': 'telegram',
@@ -17,74 +108,4 @@ user_list = [{'id': 1, 'name': 'Alex', 'username': 'alex111', 'email': 'alex@mai
              {'id': 4, 'name': 'Mike', 'username': 'michael11', 'email': 'mike@mail.com', 'company': 'dunder mifflin',
               'completed': [], 'uncompleted': []}
              ]
-
-
-path = './tasks'
-new_time = time.ctime()
-old_time = ''
-report_name = ''
-new_name = ''
-
-# создание директории для отчетов
-try:
-    os.mkdir(path)
-except FileExistsError:
-    pass
-os.chdir(path)
-# формирование строки с инфой о юзере и задачами
-for user in user_list:
-
-    report_name = '{}.txt'.format(user['username'])
-    new_name = '{0}_{1}.txt'.format(user['username'], old_time)
-
-
-    # это должно быть во вложенном for
-    main_prompt = "{0}<{1}> {2}\n{3}".format(user['name'],
-                                         user['email'],
-                                         new_time,
-                                         user['company'],)
-    completed_task_prompt = '\n\nCompleted tasks:'
-    uncompleted_task_prompt = '\n\nUncompleted tasks:'
-
-    if len(user['completed']) == 0:
-        task_prompt = '\nNo tasks.'
-        completed_task_prompt += task_prompt
-    else:
-        for task in user['completed']:
-            task_prompt = '\nNo tasks.'
-            task_prompt = '\n{}'.format(task)
-            completed_task_prompt += task_prompt
-
-    main_prompt += completed_task_prompt
-
-
-    if len(user['uncompleted']) == 0:
-        task_prompt = '\nNo tasks.'
-        uncompleted_task_prompt += task_prompt
-    else:
-        for task in user['uncompleted']:
-            task_prompt = '\nNo tasks.'
-            task_prompt = '\n{}'.format(task)
-            uncompleted_task_prompt += task_prompt
-        
-    main_prompt += uncompleted_task_prompt
-    old_time = new_time
-    if report_name in os.listdir():
-        # os.chdir(path)
-        os.rename(report_name, new_name)
-        time.sleep(0.5)
-        with open(report_name, 'w+') as file:
-            file.write(main_prompt)
-    else:
-        # os.chdir(path)
-        with open(report_name, 'w+') as file:
-            file.write(main_prompt)
-        
-    print(main_prompt + '\n')
-
-
-
-
-# проверка, есть ли такой отчет. Если есть, старый переименовать, создать новый. Если нет, создать новый
-#dir_files = os.listdir(path)
-
+    create_report(user_list, path)
