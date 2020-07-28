@@ -2,7 +2,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 from math import log
-import re
+
 
 '''
 ФАЙЛ СО СЧЕТЧИКАМИ ДОЛЖЕН НАЗЫВАТЬСЯ perf_info.txt!!!
@@ -16,15 +16,28 @@ class TextParser:
     def __init__(self):
         self.counters_1 = {'method': {},
                            'scenario': {},
-                           'ndb_1': {},
-                           'ndb_2': {},
-                           'ndb_3': {}}
+                           'ndb': {}
+                           }
 
         self.counters_2 = {'method': {},
                            'scenario': {},
-                           'ndb_1': {},
-                           'ndb_2': {},
-                           'ndb_3': {}}
+                           'ndb': {}
+                           }
+
+    def check_ndb(self):
+        unpaired = []
+        if len(self.counters_1['ndb']) > len(self.counters_2['ndb']):
+            for i in self.counters_1['ndb']:
+                if i not in self.counters_2['ndb']:
+                    unpaired.append(i)
+        else:
+            for i in self.counters_2['ndb']:
+                if i not in self.counters_1['ndb']:
+                    unpaired.append(i)
+        #print(unpaired)
+
+
+
 
     def _text_parser(self):
         """
@@ -33,6 +46,7 @@ class TextParser:
         """
         with open('perf_info.txt') as file:
             counters = file.readlines()
+        res_lists = []                                 # list with completed lists for each core
         handled_list = []
         for line in counters:
             line = line.split('|')
@@ -52,16 +66,14 @@ class TextParser:
                         pass
                 handled_list.append(line)
 
-        all_lists = []  # будет хранить все списки
-
         for l in handled_list:
             if l[0] == 'GetCustomer_PrintEntity':
                 event = []
-                all_lists.append(event)
+                res_lists.append(event)
             event.append(l)
 
-        core_1 = all_lists[0]                   # split statistics for each core
-        core_2 = all_lists[1]
+        core_1 = res_lists[0]                   # split statistics for each core
+        core_2 = res_lists[1]
 
         return core_1, core_2
 
@@ -86,18 +98,10 @@ class TextParser:
             self.counters_1['scenario'][scenarios_1[i][0]] = scenarios_1[i][1:]
             self.counters_2['scenario'][scenarios_2[i][0]] = scenarios_2[i][1:]
 
-        for i in range(40):
-            self.counters_1['ndb_1'][ndb_1[i][0]] = ndb_1[i][1:]
-            self.counters_2['ndb_1'][ndb_2[i][0]] = ndb_2[i][1:]
-
-        for i in range(40, 80):
-            self.counters_1['ndb_2'][ndb_1[i][0]] = ndb_1[i][1:]
-            self.counters_2['ndb_2'][ndb_2[i][0]] = ndb_2[i][1:]
-
-        for i in range(80, 116):
+        for i in range(120):
             try:
-                self.counters_1['ndb_3'][ndb_1[i][0]] = ndb_1[i][1:]
-                self.counters_2['ndb_3'][ndb_2[i][0]] = ndb_2[i][1:]
+                self.counters_1['ndb'][ndb_1[i][0]] = ndb_1[i][1:]
+                self.counters_2['ndb'][ndb_2[i][0]] = ndb_2[i][1:]
             except:
                 pass
 
@@ -188,7 +192,6 @@ class Plotter:
         method_sum_time.set_title('Method sum time (hours)')
         method_sum_time.set_yticks(y_method)
         method_sum_time.set_yticklabels(y_axis_method, size=8)
-        #method_sum_time.set_xlabel('ЫВПЫВПЫВПЫВПЫВПЫВПЫВПЫВПЫВПВЫПЫВП')
         method_sum_time.legend()
 
         # TOTAL AVG TIME SCENARIO PLOT
@@ -207,23 +210,32 @@ class Plotter:
 
         plt.show()
 
-    def ndb_sum_batch_1(self, counters_tuple):
+    def ndb_sum_bar(self, counters_tuple):
         """
         Make diagram of sum_time for ndb methods
         """
         core_1, core_2 = counters_tuple
 
-        y_axis_metrics_1 = [i for i in core_1['ndb_1'].keys()]
+        y_axis_metrics_1 = [i for i in core_1['ndb'].keys()]
         y_1 = np.arange(len(y_axis_metrics_1))
-        y_axis_metrics_2 = [i for i in core_1['ndb_2'].keys()]
+        y_axis_metrics_2 = [i for i in core_1['ndb'].keys()]
         y_2 = np.arange(len(y_axis_metrics_2))
+        y_axis_metrics_3 = [i for i in core_1['ndb'].keys()]
+        y_3 = np.arange(len(y_axis_metrics_3))
+
+        if len(core_1['ndb']) > len(core_2['ndb']):
+            y_axis_metrics_4 = [i for i in core_1['ndb'].keys()]
+        else:
+            y_axis_metrics_4 = [i for i in core_2['ndb'].keys()]
+        y_4 = np.arange(len(y_axis_metrics_4))
         width = 0.3
 
-        fig, (sum_time_batch_1, sum_time_batch_2) = plt.subplots(nrows=1, ncols=2)
+        fig, ((sum_time_batch_1, sum_time_batch_2),
+              (sum_time_batch_3, sum_time_batch_4)) = plt.subplots(nrows=2, ncols=2)
 
         #  SUM TIME BATCH 1
-        sum_time_11 = [log(i[1]) for i in core_1['ndb_1'].values()]
-        sum_time_12 = [log(i[1]) for i in core_2['ndb_1'].values()]
+        sum_time_11 = [log(i[1]) for i in core_1['ndb'].values()]
+        sum_time_12 = [log(i[1]) for i in core_2['ndb'].values()]
         sum_time_batch_1.barh(y_1 - width / 2, sum_time_11, width, label=self.core_name_1)
         sum_time_batch_1.barh(y_1 + width / 2, sum_time_12, width, label=self.core_name_2)
         sum_time_batch_1.set_title('ndb_sum_time (batch 1)')
@@ -231,15 +243,43 @@ class Plotter:
         sum_time_batch_1.set_yticklabels(y_axis_metrics_1, size=7)
         sum_time_batch_1.legend()
 
-        #  SUM TIME BATCH 1
-        sum_time_21 = [log(i[1]) for i in core_1['ndb_2'].values()]
-        sum_time_22 = [log(i[1]) for i in core_2['ndb_2'].values()]
-        sum_time_batch_2.barh(y_1 - width / 2, sum_time_21, width, label=self.core_name_1)
-        sum_time_batch_2.barh(y_1 + width / 2, sum_time_22, width, label=self.core_name_2)
+        #  SUM TIME BATCH 2
+        sum_time_21 = [log(i[1]) for i in core_1['ndb'].values()]
+        sum_time_22 = [log(i[1]) for i in core_2['ndb'].values()]
+        sum_time_batch_2.barh(y_2 - width / 2, sum_time_21, width, label=self.core_name_1)
+        sum_time_batch_2.barh(y_2 + width / 2, sum_time_22, width, label=self.core_name_2)
         sum_time_batch_2.set_title('ndb_sum_time (batch 2)')
         sum_time_batch_2.set_yticks(y_2)
         sum_time_batch_2.set_yticklabels(y_axis_metrics_2, size=7)
         sum_time_batch_2.legend()
+
+        #  SUM TIME BATCH 3
+        sum_time_31 = [log(i[1]) for i in core_1['ndb'].values()]
+        sum_time_32 = [log(i[1]) for i in core_2['ndb'].values()]
+        sum_time_batch_3.barh(y_3 - width / 2, sum_time_31, width, label=self.core_name_1)
+        sum_time_batch_3.barh(y_3 + width / 2, sum_time_32, width, label=self.core_name_2)
+        sum_time_batch_3.set_title('ndb_sum_time (batch 3)')
+        sum_time_batch_3.set_yticks(y_3)
+        sum_time_batch_3.set_yticklabels(y_axis_metrics_3, size=7)
+        sum_time_batch_3.legend()
+
+        #  SUM TIME BATCH 4
+        sum_time_41 = [log(i[1]) for i in core_1['ndb'].values()]
+        sum_time_42 = [log(i[1]) for i in core_2['ndb'].values()]
+
+        if len(sum_time_41) > len(sum_time_42):
+            for i in range(len(sum_time_41) - len(sum_time_42)):
+                sum_time_42.append(0)
+        else:
+            for i in range(len(sum_time_42) - len(sum_time_41)):
+                sum_time_41.append(0)
+
+        sum_time_batch_4.barh(y_4 - width / 2, sum_time_41, width, label=self.core_name_1)
+        sum_time_batch_4.barh(y_4 + width / 2, sum_time_42, width, label=self.core_name_2)
+        sum_time_batch_4.set_title('ndb_sum_time (batch 4)')
+        sum_time_batch_4.set_yticks(y_4)
+        sum_time_batch_4.set_yticklabels(y_axis_metrics_4, size=7)
+        sum_time_batch_4.legend()
 
         plt.show()
 
@@ -248,7 +288,22 @@ if __name__ == '__main__':
     parser = TextParser()
     handled_tuple = parser.parse()
     core_1, core_2 = handled_tuple
-    plotter = Plotter()
-    plotter.time_bar(handled_tuple)
-    plotter.count_bar(handled_tuple)
-    plotter.ndb_sum_batch_1(handled_tuple)
+    #plotter = Plotter()
+    parser.check_ndb()
+    #plotter.time_bar(handled_tuple)
+    #plotter.count_bar(handled_tuple)
+    #plotter.ndb_sum_bar(handled_tuple)
+    list_2 = {'1': 1, '2': '2', '3': 3}
+    list_1 = {'1': '1', '2': '2', '4': 4, '3': 3, '5': 5}
+    diff = []
+
+    if len(list_1) > len(list_2):
+        for i in list_1:
+            if i not in list_2:
+                diff.append(i)
+    else:
+        for i in list_2:
+            if i not in list_1:
+                diff.append(i)
+
+    print(diff)

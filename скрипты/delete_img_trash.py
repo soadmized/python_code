@@ -1,6 +1,6 @@
-***
-Для удаления в директории файлов с неугодныи расширениями 
-***
+"""
+Removes all files in directory (including itself) except .jpg and .mov 
+"""
 import os
 import shutil
 
